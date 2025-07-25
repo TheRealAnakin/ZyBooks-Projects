@@ -38,7 +38,7 @@ def coinValue(total):
             if pennies > 1:
                 print(pennies, "Pennies")
             else:
-                print(pennies, "Pennie")
+                print(pennies, "Penny")
     elif total // 25 != 0:
         quarters = total // 25
         total = total - (quarters * 25)
@@ -66,7 +66,7 @@ def coinValue(total):
             if pennies > 1:
                 print(pennies, "Pennies")
             else:
-                print(pennies, "Pennie")
+                print(pennies, "Penny")
     elif total // 10 !=0:
         dimes = total // 10
         total = total - (dimes * 10)
@@ -87,7 +87,7 @@ def coinValue(total):
             if pennies > 1:
                 print(pennies, "Pennies")
             else:
-                print(pennies, "Pennie")
+                print(pennies, "Penny")
     elif total // 5 !=0:
         nickels = total // 5
         total = total - (nickels * 5)
@@ -101,14 +101,14 @@ def coinValue(total):
             if pennies > 1:
                 print(pennies, "Pennies")
             else:
-                print(pennies, "Pennie")
+                print(pennies, "Penny")
     elif total // 1 !=0:
         pennies = total // 1 
         total = total - (pennies * 1)
         if pennies > 1:
             print(pennies, "Pennies")
         else:
-            print(pennies, "Pennie")
+            print(pennies, "Penny")
 
         
 def main():
