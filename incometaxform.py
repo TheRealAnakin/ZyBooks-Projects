@@ -26,7 +26,7 @@ def calculateTax(wages, interest, unemployment, status, taxwithheld, taxableinco
             return round(2000 + ((taxableincome - 20000) / 100 * 12))
         if taxableincome > 80000:
             return round(9200 + ((taxableincome - 80000) / 100 * 22))
-            
+    return 0        
             
             
 def main():
@@ -50,7 +50,11 @@ def main():
             deduction = 24000
         print(f"Deduction: ${deduction:,}")
         taxableincome = agi - deduction
+        if taxableincome < 0:
+            taxableincome = 0
         print(f"Taxable income: ${taxableincome:,}")
+        if taxableincome == 0:
+            quit()
         tax = calculateTax(wages, taxInterest, unemployment, status, taxWithheld, taxableincome)
         print(f"Federal tax: ${tax:,}")
         taxDue = tax - taxWithheld
