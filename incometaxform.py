@@ -36,7 +36,9 @@ def main():
     unemployment = int(information[2])
     status = int(information[3])
     taxWithheld = int(information[4])    
-  
+    if status > 2:
+        status = 1
+
  
     agi = wages + taxInterest + unemployment
     print(f"AGI: ${agi:,}")
@@ -60,7 +62,8 @@ def main():
         taxDue = tax - taxWithheld
         if taxDue < 0:
             print(f"Tax refund: ${abs(taxDue):,}")
-            
+        if taxWithheld == 0:
+            print(f"Taxes Owed: ${tax:,}")
             
 main()
     
