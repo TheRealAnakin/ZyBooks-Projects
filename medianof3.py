@@ -11,10 +11,7 @@ def main():
     for i in range(0, len(arr) - 1):
         if arr[i] > arr[i + 1]:
             biggest = arr[i]
-            print(biggest)
-            quit()
-            
-
-
+        
+        
+    print("Biggest:", biggest)
 main()
-
