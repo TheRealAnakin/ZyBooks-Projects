@@ -1,8 +1,20 @@
+
+
+
+
 def main():
     x = int(input())
     y = int(input())
     z = int(input())
     arr = [x,y,z]
-    if z < x < y 
+    
+    for i in range(0, len(arr) - 1):
+        if arr[i] > arr[i + 1]:
+            biggest = arr[i]
+            print(biggest)
+            quit()
+            
+
+
 main()
 
